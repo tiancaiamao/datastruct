@@ -3,10 +3,10 @@
 
 using namespace std;
 
+void adjustHeap(int* array,int s,int m); //s是堆顶位置...s的子树都是堆了.调整使整个array成堆 
+void heapsort(int* array,int n);            //堆排序算法 
 int main(int argc, char *argv[])
 {
-    void adjustHeap(int* array,int s,int m); //s是堆顶位置...s的子树都是堆了.调整使整个array成堆 
-    void heapsort(int* array,int n);            //堆排序算法 
     int a[8]={49,38,65,97,76,13,27,49};
     heapsort(a,8);
     cout<<"排序后"<<endl;
